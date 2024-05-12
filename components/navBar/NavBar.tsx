@@ -1,6 +1,6 @@
 export const NavBar = (p: { onToggleClick: () => void }) => {
   return (
-    <div className="navbar bg-base-100 sticky top-0 border-b">
+    <div className="navbar bg-base-200 sticky top-0 border-b z-[99]">
       <div className="flex-none">
         <button className="btn btn-square btn-ghost" onClick={p.onToggleClick}>
           <svg
@@ -21,7 +21,7 @@ export const NavBar = (p: { onToggleClick: () => void }) => {
       <div className="hidden md:block">
         <a className="btn btn-ghost text-xl">daisyCN UI</a>
       </div>
-      <div className="flex-1"></div>
+      <div className="flex-1" />
       <div className="flex gap-4 pr-4">
         <div className="btn btn-ghost">hello</div>
         <div className="btn btn-ghost">mom</div>
