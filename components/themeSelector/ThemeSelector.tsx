@@ -88,11 +88,13 @@ export const ThemeSelector = () => {
           <div key={x}>
             <div
               data-theme={x}
-              className="btn btn-neutral btn-wide btn-base-100"
+              className="btn btn-wide btn-base-100"
               onClick={() => setThemeName(x)}
             >
               <div className="flex flex-col gap-2">
-                <div>{x}</div>
+                <div>
+                  {x} {x === themeName && <>&#10003;</>}
+                </div>
                 <div className="flex gap-2">
                   {Object.entries(colorClassMap).map((entry) => (
                     <div key={`${x}-${entry[0]}`}>
@@ -109,7 +111,6 @@ export const ThemeSelector = () => {
           </div>
         ))}
       </div>
-      <div>{themeName}</div>
     </div>
   );
 };
