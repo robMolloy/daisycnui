@@ -10,12 +10,10 @@ export const brandColors = [
 const stateColors = ["info", "success", "warning", "error"] as const;
 const allColors = [...brandColors, ...stateColors];
 
-//
-//
-// implemented like this to enable tailwind to access the relevant colors
 const colorClassMap: {
   [k in (typeof allColors)[number]]: `badge-${k}`;
 } = {
+  // enables tailwind to scan and find the relevant classes
   neutral: "badge-neutral",
   primary: "badge-primary",
   secondary: "badge-secondary",
@@ -63,16 +61,24 @@ const themeNames = [
 ] as const;
 
 export const ThemeSelector = () => {
-  const [themeName, setThemeName] = useState<(typeof themeNames)[number]>(
-    themeNames[0]
-  );
+  const [themeName, setThemeName] = useState<
+    (typeof themeNames)[number] | undefined
+  >();
 
   useEffect(() => {
+    const newThemeName = window.localStorage.getItem("themeName");
+    const checkedThemeName = themeNames.find((x) => x === newThemeName);
+    if (checkedThemeName) setThemeName(checkedThemeName);
+  }, []);
+
+  useEffect(() => {
+    if (!themeName) return;
     const htmlElm = document.querySelector("html");
     if (!htmlElm)
       throw new Error("can't find html element so unable to change theme");
 
     htmlElm.setAttribute("data-theme", themeName);
+    window.localStorage.setItem("themeName", themeName);
   }, [themeName]);
 
   return (

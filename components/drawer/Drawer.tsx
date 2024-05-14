@@ -1,7 +1,7 @@
 export const Drawer = (p: { show: boolean }) => {
   return (
     <ul
-      className={`menu bg-base-200 w-56 h-screen block ${
+      className={`menu bg-base-200 w-56 h-screen block border-r ${
         p.show ? "" : "hidden"
       }`}
     >

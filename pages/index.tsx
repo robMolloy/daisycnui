@@ -1,9 +1,109 @@
-import { ThemeSelector } from "@/components/themeSelector/ThemeSelector";
+import { Drawer } from "@/components/drawer/Drawer";
+import { Layout } from "@/components/layout/Layout";
+import { NavBar } from "@/components/navBar/NavBar";
+import { useState } from "react";
 
-export default function Home() {
+export default function Home(p: { text: string }) {
   return (
-    <main className={`flex `}>
-      <ThemeSelector />
-    </main>
+    <>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+      <div>asddsaadasasasd</div>
+    </>
   );
 }

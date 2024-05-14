@@ -8,6 +8,7 @@ export type TLayoutProps = {
 
 export const Layout = (p: TLayoutProps) => {
   const [showSideMenu, setShowSideMenu] = useState(true);
+
   return (
     <>
       <div className="flex">
